@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #effffb;
+    color: #303030;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+}
+
+nav p {
+    color: #7FE367;
+    font-family: 'Audiowide', cursive;
+}
+
+@media (min-width: 670px) {
+    nav {
+        flex-flow: row nowrap;
+    }
+}
+
+img {
+    width: 15rem;
+}
+
+.container-counter p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.container-main {
+    background-color: #4f98ca;
+    font-size: 1.5rem;
+    height: 23rem;
+    padding: 1rem;
+}
+
+
+.option-buttons button {
+    display: block;
+    margin: 0.25rem 0;
+    border: 1px solid #effffb;
+    background-color: #4f98ca;
+    border-radius: 2rem;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.15rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+footer p {
+    background-color: #4f98ca;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+}
+
+.navigation-buttons {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row nowrap;
+   justify-content: center;
+}
+
+.navigation-buttons button {
+    background-color: #303030;
+    font-family: 'Source Code Pro', monospace;
+    padding: 0.25rem 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #7FE367;
+    border: 1px solid #242323;
+    outline: none;
+    margin-top: 0.15rem;
+}
+
+.prev {
+    border-radius: 2rem 0 0 2rem;
+}
+
+.next {
+    border-radius: 0 2rem 2rem 0;
+}
+
+button:active,
+button:hover {
+    transform: scale(1.05);
+}
+
+/* .correct {
+    background-color: #7FE367;
+    color: #ffffff;
+}
+
+.wrong {
+    background-color: #B5060D;
+    color: #ffffff;
+} */
