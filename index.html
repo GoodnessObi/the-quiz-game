@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Trivia</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron|PT+Mono|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="container-nav">
+        <img src="images/starwars.png" alt="" class="logo">
+        <p>May the force be with you. . .</p>
+    </div>
+</nav>
+
+    <div class="container-counter">
+        <p>Score: <span class="counter">0</span> of <span>5</span></p>
+    </div>
+
+
+    <div class="container">
+        <div class="container-question">
+             <!--  <div class="startgame question">
+                <h1> A long time ago in a galaxy far, far away...</h1>
+               <p>Welcome to Star Wars Trivia . . .</p>
+               <button>Click to Play</button>
+               <q>Do or do not. There is no try - Yoda</q>
+            </div> -->
+
+            <div class="question active">
+                <p>Who created Star Wars?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars">Stan Lee
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar" class="right-answer">George Lucas
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg" >Gene Roddenberry
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Which furry species lives on the forest moon of Endor?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars" class="right-answer">Ewoks
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar">C-3PO
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">Chewbacca
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Which movie is the one where Luke finds out Vader is his father?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars" class="right-answer">The Empire Strikes Back
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar">The Phantom Menace
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">The Last Jedi
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Who is the mentor of Luke Skywalker?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars">Darth Vader
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar">Han Solo
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg" class="right-answer">Obi-Wan Kenobi
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>How old was Yoda when he died?</p>
+                <div class="answer-options">
+                    <label>
+                        <input type="radio" name="starwars-creator" value="starwars">120
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="battlestar" class="right-answer">900
+                    </label>
+                    <label>
+                        <input type="radio" name="starwars-creator" value="borg">500
+                    </label>
+                </div>
+            </div>
+            <!-- <div class="question">
+                <h2>Game Over!</h2>
+                <p>You scored <span>0</span> of <span>5</span></p>
+                <button>Play Again?</button>
+                <q>It’s a trap! -Admiral Ackbar</q>
+
+            </div> -->
+        </div>
+
+        <div class="buttons">
+            <button disabled="" class="btn prev">Prev</button>
+            <button class="btn next">Next</button>
+        </div>
+    </div>
+
+    <!-- <p class="quote"></p>
+   
+“Sorry about the mess.”
+Han Solo -->
+    <!--  
+“Now, be brave and don’t look back. Don’t look back.”
+Shmi Skywalker
+“You do have your moments. Not many, but you have them.”
+Princess Leia
+“Laugh it up, fuzzball!”
+Han Solo-->
+<!-- “I have taught you everything I know. And you have become a far greater Jedi than I could ever hope to be.”
+Obi-Wan Kenobi -->
+<!-- “So this is how liberty dies. With thunderous applause.”
+Padmé Amidala -->
+
+    <script src="script.js"></script>
+</body>
+</html>
