@@ -11,8 +11,7 @@ body {
 }
 
 .container {
-    width: 50%;
-    border: 1px solid red;
+    width: 100%;
     margin: 0 auto;
     min-width: 300px;
 }
@@ -27,6 +26,8 @@ body {
 
 .start img {
     width: 25rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .start p {
@@ -76,11 +77,26 @@ nav p {
     font-family: 'Audiowide', cursive;
 }
 
-@media (min-width: 670px) {
+@media (min-width: 1000px) {
     nav {
         flex-flow: row nowrap;
     }
+
+    .container {
+        width: 50%;
+    }
 }
+
+@media  (max-width: 1000px) and (min-width: 560px) {
+    .container {
+        width: 70%;
+    }
+    nav {
+        flex-flow: row nowrap;
+    }
+
+  }
+
 
 .container-nav img {
     width: 15rem;
