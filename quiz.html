@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Trivia</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron|PT+Mono|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="main">
+        <div id="start-page" class="container start">
+                <h1> A long time ago in a galaxy far, far away...</h1>
+                <p>Welcome to</p>
+                <img src="images/starwars.png" alt="">
+                <p>Trivia</p>
+    
+                <button>Click to Play</button>
+    
+                <p class="quote">"Do or do not. There is no try"<br> - Yoda</p>
+        </div>
+        <div id="quiz-container" class="container" style="display: none;">
+            <div class="container-nav">
+                <nav>
+                    <img src="images/starwars.png" alt="">
+                    <p>May the Force be with you ...</p>
+                </nav>
+            </div>
+            
+            <div class="container-counter">
+                <p>Score: <span class="counter">0</span></p>
+            </div>
+      
+            <div class="container-main">
+                <p id="question" class="question"> who is the furry creater in the forest?</p>
+
+                <label for="" class="option"><input type="radio" name="option" value="1"><span id="opt1">Ewoks</span></label>
+                <label for="" class="option"><input type="radio" name="option" value="1"><span id="opt2">C-P30</span></label>
+                <label for="" class="option"><input type="radio" name="option" value="1"><span id="opt3">Chewbacca</span></label>
+
+                <p class="quote" id="quote">“You do have your moments. Not many, but you have them."<br> - Princess Leia</p>
+            </div>
+            <footer>
+                <p id="progress"> Question x of y</p>
+            </footer>
+            <button id="next-button" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+        </div>
+      
+
+        <div id="result" class="container result" style="display: none;">
+        </div>
+    </div>
+  
+
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+   <!-- <p class="quote"></p>
+   
+“Sorry about the mess.”
+Han Solo -->
+    <!--  
+“Now, be brave and don’t look back. Don’t look back.”
+Shmi Skywalker
+“You do have your moments. Not many, but you have them.”
+Princess Leia
+“Laugh it up, fuzzball!”
+Han Solo-->
+<!-- “I have taught you everything I know. And you have become a far greater Jedi than I could ever hope to be.”
+Obi-Wan Kenobi -->
+<!-- “So this is how liberty dies. With thunderous applause.”
+Padmé Amidala -->
