@@ -76,6 +76,8 @@ body {
     padding: 1rem;
 }
 
+
+
 nav {
     display: flex;
     flex-flow: column nowrap;
@@ -160,7 +162,8 @@ nav p {
     border: 1.5px dashed #303030;
     border-radius: 2rem;
     padding: 1rem;
-    color: #7FE367;
+    color: #effffb;
+    font-size: 1rem;
 }
 
 footer p {
@@ -179,9 +182,8 @@ footer p {
     color: #7FE367;
     border: 1px solid #242323;
     outline: none;
-    margin-top: 0.15rem;
+    margin: 0.15rem 0 1rem 3rem;
     border-radius: 2rem;
-    margin-left: 1rem;
 }
 
 .next-btn:active,
@@ -192,7 +194,7 @@ footer p {
 .next-btn:disabled {
     cursor: not-allowed;
     transform: scale(1.0);
-    
+    opacity: 0.5;
 }
 
 .result {
