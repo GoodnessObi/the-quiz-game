@@ -13,13 +13,13 @@
                 <h1> A long time ago in a galaxy far, far away...</h1>
                 <p>Welcome to</p>
                 <img src="images/starwars.png" alt="">
-                <p>Trivia</p>
+                <p>trivia</p>
     
-                <button>Click to Play</button>
+                <button id="start-button">Click to Play</button>
     
                 <p class="quote">"Do or do not. There is no try"<br> - Yoda</p>
         </div>
-        <div id="quiz-container" class="container" style="display: none;">
+        <div id="quiz-container" class="container">
             <div class="container-nav">
                 <nav>
                     <img src="images/starwars.png" alt="">
@@ -32,22 +32,25 @@
             </div>
       
             <div class="container-main">
-                <p id="question" class="question"> who is the furry creater in the forest?</p>
+                <p id="question" class="question"></p>
 
-                <label for="" class="option"><input type="radio" name="option" value="1"><span id="opt1">Ewoks</span></label>
-                <label for="" class="option"><input type="radio" name="option" value="1"><span id="opt2">C-P30</span></label>
-                <label for="" class="option"><input type="radio" name="option" value="1"><span id="opt3">Chewbacca</span></label>
+                <div class="option-container"><input type="radio" name="option" value="1" onclick="answerQuestion()"><label for="" class="option"><span id="opt1"></span></label></div> 
+                <div class="option-container"><input type="radio" name="option" value="2" onclick="answerQuestion()"><label for="" class="option"><span id="opt2"></span></label></div>
+                <div class="option-container"><input type="radio" name="option" value="3" onclick="answerQuestion()"><label for="" class="option"><span id="opt3"></span></label></div> 
 
-                <p class="quote" id="quote">“You do have your moments. Not many, but you have them."<br> - Princess Leia</p>
+                <p class="quote" id="quote"></p>
             </div>
             <footer>
                 <p id="progress"> Question x of y</p>
             </footer>
-            <button id="next-button" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+            <button id="next-button" class="next-btn" disabled = "">Next Question</button>
         </div>
       
 
-        <div id="result" class="container result" style="display: none;">
+        <div id="result" class="container result">
+            <h1 id="final-score">You Scored x of y</h1>
+            <p id="final-words"> “Your eyes can deceive you. Don’t trust them.” <br>– Obi-Wan Kenobi</p>
+            <!-- <button id="restart"> Play Again</button> -->
         </div>
     </div>
   
@@ -57,18 +60,5 @@
 </body>
 </html>
 
-   <!-- <p class="quote"></p>
-   
-“Sorry about the mess.”
-Han Solo -->
-    <!--  
-“Now, be brave and don’t look back. Don’t look back.”
-Shmi Skywalker
-“You do have your moments. Not many, but you have them.”
-Princess Leia
-“Laugh it up, fuzzball!”
-Han Solo-->
-<!-- “I have taught you everything I know. And you have become a far greater Jedi than I could ever hope to be.”
-Obi-Wan Kenobi -->
-<!-- “So this is how liberty dies. With thunderous applause.”
-Padmé Amidala -->
+
+
