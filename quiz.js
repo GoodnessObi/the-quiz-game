@@ -14,14 +14,20 @@ let option3 = document.getElementById('opt3');
 let scoreCounter = document.querySelector('.counter')
 let nextButton = document.getElementById('next-button');
 let startButton = document.getElementById('start-button');
+let replayButton = document.getElementById('restart');
+let progressCounter = document.querySelector('#progress')
+let quote = document.querySelector('#quote')
 
 
 const loadQuestion = (index) => {
     let q = questions[index];
+    let questionNumber = currentQuestion + 1
     questionElement.innerHTML = q.question;
     option1.innerHTML = q.option1;
     option2.innerHTML = q.option2;
     option3.innerHTML = q.option3;
+    quote.innerHTML = q.quote;
+    progressCounter.innerHTML = 'Question ' + questionNumber + ' of ' + totalQuestions;
     nextButton.disabled = true;
 }
 
@@ -32,9 +38,10 @@ const loadNextQuestion = () => {
         nextButton.textContent = 'Finish';
     }
     if(currentQuestion === totalQuestions) {
+        let finalScore = document.getElementById('final-score')
         quizPage.style.display = 'none';
         resultPage.style.display = 'block';
-        resultPage.textContent = 'Your Score ' + score;
+        finalScore.textContent = 'You scored ' + score + ' of ' + totalQuestions;
         return;
     }
     loadQuestion(currentQuestion);
@@ -57,8 +64,8 @@ const answerQuestion =() => {
             option.nextSibling.classList.add('correct');
         }
     });
+    
     nextButton.disabled = false;
-
 }
 
 
@@ -84,3 +91,7 @@ startButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', loadNextQuestion)
+
+// replayButton.addEventListener('click', () => {
+  
+// })

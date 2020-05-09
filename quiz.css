@@ -21,7 +21,8 @@ body {
     display: none;
 }
 
-.start {
+.start,
+.result {
     padding: 2rem;
     background-color: #303030;
     color: #7FE367;
@@ -39,7 +40,8 @@ body {
     font-size: 1.25rem;
 }
 
-.start button {
+.start button,
+.result button {
     font-family: 'Audiowide', cursive;
     background-color:#7FE367;
     color: #303030;
@@ -52,16 +54,21 @@ body {
     box-shadow: 0px 5px 0px #303030;
     transition: all ease 0.2s;
 }
-.start button:active {
+
+.start button:active,
+.result button:active {
     background-color: #4f98ca;
     box-shadow: 0px 5px 0px #303030;
     transform: translateY(2px);
  }
-.start button:hover {
+
+.start button:hover,
+.result button:hover {
     background-color: #4f98ca;
   }
 
-.start .quote {
+.start .quote,
+.result p {
     margin: 1rem auto;
     width: fit-content;
     border: 1.5px dashed #7FE367;
@@ -102,7 +109,6 @@ nav p {
 
   }
 
-
 .container-nav img {
     width: 15rem;
 }
@@ -112,6 +118,7 @@ nav p {
     text-align: center;
     font-size: 1.15rem;
 }
+
 .container-main {
     background-color: #4f98ca;
     font-size: 1.5rem;
@@ -119,7 +126,6 @@ nav p {
 }
 
 .option {
-    /* display: inline-block; */
     margin: 1rem;   
     border: 1px solid #effffb;
     margin: 0.20rem;
@@ -136,11 +142,6 @@ nav p {
     align-items: center;
     justify-content: stretch;
 }
-
-/* input:checked + .option {
-    background-color: #7FE367;
-    color: #FFFFFF;
-} */
 
 .correct {
     background-color: #7FE367;
@@ -169,7 +170,6 @@ footer p {
     text-align: right;
 }
 
-
 .next-btn {
     background-color: #303030;
     font-family: 'Source Code Pro', monospace;
@@ -187,4 +187,15 @@ footer p {
 .next-btn:active,
 .next-btn:hover {
     transform: scale(1.05);
+}
+
+.next-btn:disabled {
+    cursor: not-allowed;
+    transform: scale(1.0);
+    
+}
+
+.result {
+    text-align: center;
+    margin-top: 2rem;
 }
