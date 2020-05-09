@@ -62,11 +62,17 @@ const answerQuestion =() => {
     options.forEach(option => {
         if(option.parentElement.textContent === answer) {
             option.nextSibling.classList.add('correct');
+            // option.disabled =true;
         }
     });
     
     nextButton.disabled = false;
 }
+
+// for(let i = 0; i < optionButtons.length; i++) {
+//     console.log(optionButtons[i]);
+//     optionButtons[i].children[0].disabled = true;
+// }
 
 
 const resetPage = () => {
